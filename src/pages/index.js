@@ -33,7 +33,7 @@ const styles = theme => ({
   },
 });
 
-class MainPage extends Component {
+class Index extends Component {
   constructor(props) {
     super(props);
 
@@ -118,7 +118,7 @@ class MainPage extends Component {
     return (
       <React.Fragment>
         <Typography variant="h4">
-          VisBarebones
+          VisBarebones2
         </Typography>
       </React.Fragment>
     )
@@ -126,4 +126,4 @@ class MainPage extends Component {
 
 }
 
-export default withRoot(withStyles(styles)(MainPage));
+export default withRoot(withStyles(styles)(Index));

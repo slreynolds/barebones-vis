@@ -3,7 +3,7 @@ const webpack = require('webpack');
 
 module.exports = {
   mode: 'development',
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
 
   entry: [
     // entry to react
@@ -43,6 +43,10 @@ module.exports = {
     ]
   },
 
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
+
   devServer: {
       host: '0.0.0.0',
       port: process.env.PORT || 3000,
@@ -50,6 +54,7 @@ module.exports = {
       contentBase: path.resolve(__dirname, 'public'),
       watchOptions: {
         poll: 500
-      }
+      },
+      hot: true,
     },
 };

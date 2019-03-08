@@ -1,7 +1,7 @@
 {
-  "name": "vis",
+  "name": "barebones-vis",
   "version": "1.0.0",
-  "description": "Visualisierung",
+  "description": "Barebones Visualization Package To Kickstart Your Project",
   "main": "dist/bundle.js",
   "scripts": {
     "start": "webpack-dev-server  --inline --hot --config webpack.config.dev.js  --watch src/index.js"
@@ -9,13 +9,13 @@
   "author": "Steven Lamarr Reynolds <reynolds.tud@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:slreynolds/vis.git"
+    "url": "git@github.com:slreynolds/barebones-vis.git"
   },
   "keywords": [
     "visualization",
     "awesome"
   ],
-  "license": "MIT License",
+  "license": "MIT",
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "@material-ui/lab": "^1.0.0-alpha.12",
@@ -31,6 +31,6 @@
     "source-map-loader": "^0.2.4",
     "webpack": "^4.29.2",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": ">=3.1.11"
+    "webpack-dev-server": "^3.2.1"
   }
 }
